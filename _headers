@@ -1,11 +1,5 @@
-/
-	Content-Security-Policy: default-src 'self' gamertrip.info gamertrip.xyz cta.gay; img-src 'self' gamertrip.info gamertrip.xyz cta.gay; script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com gamertrip.xyz gamertrip.info cta.gay; connect-src cloudflareinsights.com
-
-/Notes
-	Content-Security-Policy: default-src 'self' gamertrip.info gamertrip.xyz cta.gay; img-src 'self' gamertrip.info gamertrip.xyz cta.gay; script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com gamertrip.xyz gamertrip.info cta.gay; connect-src cloudflareinsights.com
-	
-/Sitemap
-	Content-Security-Policy: default-src 'self' gamertrip.info gamertrip.xyz cta.gay; img-src 'self' gamertrip.info gamertrip.xyz cta.gay; script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com gamertrip.xyz gamertrip.info cta.gay; connect-src cloudflareinsights.com
+/*
+	Content-Security-Policy: default-src 'self' trps.dev gamertrip.info gamertrip.xyz cta.gay; img-src 'self' *.trps.dev trps.dev *.gamertrip.info gamertrip.info *.gamertrip.xyz gamertrip.xyz *.cta.gay cta.gay; script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com gamertrip.xyz trps.dev gamertrip.info cta.gay 'sha256-X+zrZv/IbzjZUnhsbWlsecLbwjndTpG0ZynXOif7V+k='; connect-src cloudflareinsights.com; object-src 'none';
 
 /404
 	X-Robots-Tag: noindex
