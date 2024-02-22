@@ -27,7 +27,7 @@
 h1 {
 	color: #fff;
 	font-size: calc(48px + .75vw - .25vw);
-	font-family: 'nunito-extra-bold', Arial;
+	font-family: 'nunito-extra-bold', Arial, sans-serif;
 	font-weight: 700;
 	text-align: left;
 	margin-bottom:0;
@@ -35,14 +35,14 @@ h1 {
 
 p {
 	color: #fff;
-	font-family: 'nunito-semi-bold', Arial; 
+	font-family: 'nunito-semi-bold', Arial, sans-serif;
 	text-align: left; 
 	font-size: calc(14px + .3vw);
 	line-height: 150%;
 }
 
 a {
-	font-family: 'nunito-semi-bold', Arial; 
+	font-family: 'nunito-semi-bold', Arial, sans-serif;
 	color: var(--link-color);
 	font-size: calc(13px + .3vw);
 	border-radius: 5px;

@@ -38,7 +38,7 @@
 
 h1 {
 	font-size: calc(48px + .75vw - .25vw);
-	font-family: 'nunito-extra-bold', Arial;
+	font-family: 'nunito-extra-bold', Arial, sans-serif;
 	font-weight: 700;
 	text-align: left;
 	margin-top: 0;
@@ -94,7 +94,6 @@ h1 {
 .middle-item {
 	padding: calc(8px + 1vw) calc(12px + .3521vw) 0 calc(12px + .3521vw);
 	margin: 0;
-	margin-top: 0;
 	border-left: calc(3px + .055vw) solid var(--outline-color);
 }
 
@@ -137,7 +136,7 @@ span.tooltip {
 	border:1px solid #4d5d6c;
 	transition: opacity .2s;
 	position: absolute;
-	font-family: 'nunito-semi-bold', Arial;
+	font-family: 'nunito-semi-bold', Arial, sans-serif;
 	font-size: calc(13px + .2vw);
 	line-height: 150%;
 	z-index: 2;
@@ -205,7 +204,7 @@ div h2 {
 
 p {
 	color: #fff;
-	font-family: 'nunito-semi-bold', Arial; 
+	font-family: 'nunito-semi-bold', Arial, sans-serif;
 	text-align: left; 
 	font-size: calc(14px + .3vw);
 	line-height: 150%;
@@ -232,7 +231,7 @@ s {
 
 h2 {
 	color: var(--first-header-color); 
-	font-family: 'nunito-extra-bold', Arial;
+	font-family: 'nunito-extra-bold', Arial, sans-serif;
 	font-size: calc(19px + .4621vw);
 	text-align: left;
 	padding-top: calc(4px - .1vw);
@@ -248,7 +247,7 @@ h2:hover {
 
 h3 {
 	color: #fff; 
-	font-family: 'nunito-extra-bold', Arial;
+	font-family: 'nunito-extra-bold', Arial, sans-serif;
 	font-size: calc(19px + .4621vw);
 	text-align: left;
 	padding-top: calc(4px - .1vw);
@@ -257,14 +256,14 @@ h3 {
 }
 
 .footertxt {
-	font-family: 'nunito-semi-bold', Arial;
+	font-family: 'nunito-semi-bold', Arial, sans-serif;
 	font-size: calc(24px + .3vw);
 	text-align: left;
 	margin:.35em 0;
 }
 
 a {
-	font-family: 'nunito-semi-bold', Arial; 
+	font-family: 'nunito-semi-bold', Arial, sans-serif;
 	color: var(--link-color);
 	font-size: calc(13px + .3vw);
 	border-radius: 5px;
@@ -454,7 +453,7 @@ img.cats:hover {
 }
 
  /* Disabling the fade and slide in animation for people who either: have JS off, are on slow devices, or prefer reduced motion */
-@media (scripting: disabled), not (update: fast), not (prefers-reduced-motion: no-preference) {
+@media (scripting: none), not (update: fast), not (prefers-reduced-motion: no-preference) {
 	
 	.animate {
 		opacity: 1;
