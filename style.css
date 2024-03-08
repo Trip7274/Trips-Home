@@ -221,14 +221,6 @@ s {
 	color: #b2b2b2;
 }
 
-#shifting {
-	text-decoration: underline dashed;
-}
-
-#SFW {
-	text-decoration: underline dashed red;
-}
-
 h2 {
 	color: var(--first-header-color); 
 	font-family: 'nunito-extra-bold', Arial, sans-serif;
@@ -263,6 +255,7 @@ h3 {
 }
 
 a {
+	font-family: 'nunito-semi-bold', Arial, sans-serif;
 	color: var(--link-color);
 	font-size: calc(13px + .3vw);
 	border-radius: 5px;
@@ -298,6 +291,33 @@ img.cats:hover {
 .discord {
 	max-width:calc(12px + .40621vw);
 	height:auto;
+}
+
+.noscriptmsg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - calc(calc(5px - .1vw) + calc(28px + .6vw)));
+}
+
+.innermsg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: calc(12px + .3521vw);
+	background-color: var(--first-background-color);
+	border-radius: calc(2px + .2vw);
+	transition: all .15s ease-in-out;
+}
+
+.innermsg:hover {
+	background-color: var(--second-background-color);
+}
+
+.noscriptmsg p {
+	margin: calc(5px - .1vw);
+	display: block;
 }
 
 /* More contrasty version for people with vision deficiencies */
