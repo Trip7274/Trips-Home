@@ -17,7 +17,7 @@ imageElements.forEach(imageElement => {
 	const domain = imageUrl.host;
 
 		if (imageUrl.protocol === "http:" || imageUrl.protocol === "https:") {
-			imageElement.src = `https://cdn.${domain}/?image=${originalPath}&width=${elementWidth}&height=${elementHeight}`;
+			imageElement.src = `https://${domain}/images/?image=${originalPath}&width=${elementWidth}&height=${elementHeight}`;
 			imageElement.classList.add("load");
 		} else {
 			console.log(`Keeping original URL for non-HTTP(S) path: ${imageElement.src}`);
