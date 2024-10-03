@@ -1,4 +1,4 @@
-// This code was written by Google Gemini
+// This code was written by Google Gemini - UNUSED (or should be)
 
 function updateImageSrcsWithScreenDimensions() {
   const imageElements = document.querySelectorAll(".dynamic");
