@@ -1,2 +1,5 @@
 user-agent: *
 allow: /
+
+user-agent: *
+disallow: /cherry/

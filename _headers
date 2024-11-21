@@ -3,3 +3,6 @@
 
 /404
 	X-Robots-Tag: noindex
+
+/cherry
+	X-Robots-Tag: noindex
