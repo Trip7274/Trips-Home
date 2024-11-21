@@ -17,14 +17,14 @@
 
 @font-face {
 	font-family: 'nunito-semi-bold';
-	src: url('../Nunito-SemiBold.woff2') format('woff2');
+	src: url('../assets/Nunito-SemiBold.woff2') format('woff2');
 	font-weight: 600;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: 'nunito-extra-bold';
-	src: url('../Nunito-ExtraBold.woff2') format('woff2');
+	src: url('../assets/Nunito-ExtraBold.woff2') format('woff2');
 	font-weight: 800;
 	font-display: swap;
 }

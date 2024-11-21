@@ -19,14 +19,14 @@
 
 @font-face {
 	font-family: 'nunito-semi-bold';
-	src: url('Nunito-SemiBold.woff2') format('woff2');
+	src: url('assets/Nunito-SemiBold.woff2') format('woff2');
 	font-weight: 600;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: 'nunito-extra-bold';
-	src: url('Nunito-ExtraBold.woff2') format('woff2');
+	src: url('assets/Nunito-ExtraBold.woff2') format('woff2');
 	font-weight: 800;
 	font-display: swap;
 }
@@ -64,12 +64,17 @@ h1 {
 }
 
 .subtitle {
-	position:relative;
+	display: inline;
+	position: relative;
 	left: 7px;
 	font-size: calc(20px + .4vw - .2vw);
 	text-align: left;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 	transition: all .15s ease-in-out;
+	line-height: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	margin: 0;
 }
 
 .firstdiv {
@@ -210,6 +215,13 @@ p {
 	line-height: 150%;
 	padding-right: calc(18px + 1vw);
 	padding-left: calc(20px + 1.5vw);
+}
+
+code {
+	font-size: calc(10px + .3vw);
+	background: #2B2D30;
+	border: #43454a solid 1px;
+	border-radius: calc(2px + .2vw);
 }
 
 .extra_punctuation {
