@@ -1,0 +1,56 @@
+%section {
+	background-color: var(--first-background-color);
+	padding: calc(8px + 1vw) calc(12px + .3521vw) 0 calc(12px + .3521vw);
+	border-left: calc(3px + .055vw) solid var(--outline-color);
+	transition: all .15s ease-in-out;
+	
+	&:hover {
+		background-color: var(--second-background-color);
+	}
+}
+
+#mainDiv {
+	@extend %section;
+	background-color: var(--first-background-color);
+	margin-bottom: calc(14px + .3621vw);
+	margin-top: calc(14px + .3621vw);
+	padding: calc(8px + 1vw) calc(12px + .3521vw) calc(14px + .3621vw) calc(14px + .3621vw);
+	border-radius: calc(2px + .2vw) calc(2px + .2vw) calc(2px + .2vw) calc(2px + .2vw);
+	border-color:var(--outline-color);
+	border-style: solid;
+	border-width: 0 0 calc(3px + .055vw) calc(3px + .055vw);
+
+	&:hover {
+		border-width: 0 0 calc(6px + .055vw) calc(6px + .055vw);
+		padding: calc(8px + 1vw) calc(12px + .3521vw) calc(11px + .3621vw) calc(14px + .3621vw);
+	}
+}
+
+h3 {
+	font-family: 'nunito-semi-bold', Arial, sans-serif;
+	font-size: calc(24px + .3vw);
+	text-align: left;
+	margin:.35em 0;
+	padding-top: calc(4px - .1vw);
+	padding-right: calc(16px + .4vw);
+	padding-left: calc(10px + .8vw);
+}
+
+a {
+	font: {
+		family: "nunito-semi-bold", Arial, sans-serif;
+		size: unset;
+	};
+	color: var(--link-color);
+	border-radius: 5px;
+	
+	&:focus {
+		color: var(--second-link-color);
+		text-decoration: underline dashed;
+	}
+	&:hover {
+		color: var(--second-link-color);
+		text-decoration: none;
+	}
+}
+

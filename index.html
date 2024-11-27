@@ -8,12 +8,14 @@
 	<meta content="#070b1f" data-react-helmet="true" name="theme-color">
 	<meta name="description" content="My silly little website :3">
 	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-	<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 	<link rel="stylesheet preload prefetch" href="assets/Nunito-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet preload prefetch" href="assets/Nunito-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
-	<link href="style.css" rel="stylesheet" type="text/css">
-	<script defer src="animations.js" type="text/javascript"></script>
-	<script src="dynamic-resolution.js" async="" type="text/javascript"></script>
+
+	<link href="CSS/Global.css" rel="stylesheet" type="text/css">
+
+	<script defer src="JS/animations.js" type="text/javascript"></script>
+	<script src="JS/dynamic-resolution.js" async="" type="text/javascript"></script>
 	<meta property="og:site_name" content="Trip's Home">
 	<meta property="og:title" content="Home">
 	<meta property="og:type" content="website">
@@ -22,128 +24,115 @@
 	<meta property="og:description" content="My silly little website :3">
 </head>
 <body class="mainbody">
-<noscript>
-	<style>
-		#content {display:none;}
-	</style>
-	<div class="noscriptmsg">
-		<div class="innermsg">
+
+
+<div id="Header" class="animate">
+	<header>
+		<h1 id="Title" class="MajorGlint">Trip's home</h1><br>
+		<h2 id="Subtitle"><a href="https://youtu.be/bLoCxQ5VFAY?t=7" target="_blank" rel="noopener noreferrer" title="a link to a Youtube video saying &quot;ligma balls&quot;"><i><kbd>who the hell is trip?</kbd></i></a></h2>
+	</header>
+</div>
+
+<div class="mainDiv animate">
+	<div class="panel">
+		<main>
+			<h2>About me</h2>
 			<p>
-				Sorry, this website's gallery uses JavaScript to fetch the appropriate resolution and format for your device, and you appear to have it disabled.
+				I'm a <span class="SA">Saudi Arabian</span> guy who loves cats, lurantises, and a lotta other stuff, like playing video games and messing with computers.<br>
+				I got this domain mainly to grow my skills and hobbies, as I love computer networking and programming, so I use this as a hub for all my side-projects.<br><br>
+				Though, don’t hesitate to reach out to me on my Discord account: <code title="SGVsbG8gZmVsbG93IGJhc2U2NC1lciEgZGlkIHlvdSBsaWtlIHRoZSBwYXJ0IHdoZXJlIHlvdSBoYWQgdG8gaW5zcGVjdCBlbGVtZW50IHRvIGNvcHkgdGhpcz8K">echo "QFRyaXA3Mjc0Cg==" | base64 -d</code>
+				<!-- for your convenience, the title reads "Hello fellow base64-er! did you like the part where you had to inspect element to copy this?" -->
 			</p>
-			<p>
-				You can go to <a href="nojs.html" target="_self" rel="noopener noreferrer" title="This page's no-JS alternative">this page</a> to see a version of the website that doesn't use JavaScript, but it requires webp support.
-			</p>
-		</div>
-	</div>
-</noscript>
-
-
-<div id="content">
-	<div class="maindiv animate">
-		<header>
-				<h1 id="Trip">Trip's home</h1><br>
-			<a class="subtitle" href="https://youtu.be/bLoCxQ5VFAY?t=7" target="_blank" rel="noopener noreferrer" title="a link to a Youtube video saying &quot;ligma balls&quot;"><i><kbd>who the hell is trip?</kbd></i></a>
-		</header>
+		</main>
+		<hr class="small-spacer">
 	</div>
 
-	<div class="firstdiv animate">
-			<div class="first-item">
-				<main>
-					<h2>About me</h2>
-					<p>
-						I'm a <span class="SA">Saudi Arabian</span> guy who loves cats, lurantises, and a lotta other stuff, like playing video games and messing with computers.<br>
-						I got this domain mainly to grow my skills and hobbies, as I love computer networking and programming, so I use this as a hub for all my side-projects.<br><br>
-						Though, don’t hesitate to reach out to me on my Discord account: <code>echo "QFRyaXA3Mjc0Cg==" | base64 -d</code> (sorry, bots, do your homework)
-					</p>
-				</main>
-				<hr class="small-spacer">
-			</div>
-
-			<div class="middle-item">
-				<article>
-					<h2>My online nicknames</h2>
-					<p>
-						I go by many names online, mainly “Trip”, or “GamerTrip”, even though the latter is older,
-						I still don't mind it, call me whatever you want, so long as it’s appropriate, of course!
-						(<a href="https://youtube.com/clip/UgkxUZNrIBHoC9hLlDXlHpYkoKD_ebT93Q9d" title="a link to a Soctt the Woz video on Youtube" target="_blank" rel="noopener noreferrer">you can definitely call me fuck and hell though</a>)
-					</p>
-				</article>
-				<hr class="small-spacer">
-			</div>
-		<div class="last-item">
-			<article>
-				<h2>Website status</h2>
-				<p>
-					This website is still a work in progress; I'm considering a complete refactor before I add more content, but I have a few more projects in mind before then, so it might stay like this for a while, sorry about that!
-				</p>
-			</article>
-		</div>
-	</div>
-
-	<hr class="mid-spacer animate">
-
-	<div class="sidediv last-item animate" id="gallery">
+	<div class="panel">
 		<section>
-			<h2 class="divh2">Cats are really cool and cute</h2>
-			<!-- vv this HTML framework was generated from Google Gemini (and ship of theseus'd by me) vv -->
-			<div class="full-gallery">
-				<div class="top-gallery">
-					<a href="assets/original-cats/original-momo-2-scaled.jpg" class="top-left-pic" target="_blank" rel="noopener noreferrer" title="Momo looking silly and soft [Aug 27th, 2022]">
-						<img src="assets/cats-LQIP/no-cats_LQIP.webp" class="dynamic cats top-left-pic" alt="Momo looking silly and soft [Aug 27th, 2022]">
-					</a>
-				
-					<a href="assets/original-cats/original-leo-4-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Leo going &quot;AAAAAAA&quot; [Sep 28th, 2023]">
-						<img src="assets/cats-LQIP/biiiig-yawn_LQIP.webp" class="dynamic cats inner-pic" alt="Leo going &quot;AAAAAAA&quot; [Sep 28th, 2023]">
-					</a>
-				
-					<a href="assets/original-cats/original-untitled.cat-2-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Untitled.cat being dangerously silly with her face pressed into the camera [Nov 5th, 2022]">
-						<img src="assets/cats-LQIP/cat-close_LQIP.webp" class="dynamic cats inner-pic" alt="Untitled.cat being dangerously silly with her face pressed into the camera [Nov 5th, 2022]">
-					</a>
-				
-					<a href="assets/original-cats/original-momo-3-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Momo looking all dramatic and fluffy [Aug 24th, 2022]">
-						<img src="assets/cats-LQIP/dramatic-silly_LQIP.webp" class="dynamic cats inner-pic" alt="Momo looking all dramatic and fluffy [Aug 24th, 2022]">
-					</a>
-				
-					<a href="assets/original-cats/original-leo-3-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="You are being sniffed, please do not resist [Oct 7th, 2023]">
-						<img src="assets/cats-LQIP/being-sniffed_LQIP.webp" class="dynamic cats inner-pic" alt="You are being sniffed, please do not resist [Oct 7th, 2023]">
-					</a>
-				
-					<a href="assets/original-cats/original-momo-prime-2-scaled.jpg" class="top-right-pic" target="_blank" rel="noopener noreferrer" title="Momo (prime) being the big eebi [Aug 8th, 2017]">
-						<img src="assets/cats-LQIP/big-eebi_LQIP.webp" class="dynamic cats top-right-pic" alt="Momo (prime) being the big eebi [Aug 8th, 2017]">
-					</a>
-				</div>
-				<div class="bottom-gallery">
-					<a href="assets/original-cats/original-momo-1-scaled.jpg" class="bottom-left-pic" target="_blank" rel="noopener noreferrer" title="Momo laying in the grass [Aug 27th, 2022]">
-						<img src="assets/cats-LQIP/look-at-herrrr_LQIP.webp" class="dynamic cats bottom-left-pic" alt="Momo laying in the grass [Aug 27th, 2022]">
-					</a>
-					<a href="assets/original-cats/original-leo-2-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Leo being a soff and happy little guyyy [Nov 21st, 2023]">
-						<img src="assets/cats-LQIP/happ_LQIP.webp" class="dynamic cats inner-pic" alt="Leo being a soff and happy little guyyy [Nov 21st, 2023]">
-					</a>
-					<a href="assets/original-cats/original-untitled.cat-1-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Untitled.cat looking at the camera cutely [Nov 10th, 2022]">
-						<img src="assets/cats-LQIP/silly-name_LQIP.webp" class="dynamic cats inner-pic" alt="Untitled.cat looking at the camera cutely [Nov 10th, 2022]">
-					</a>
-					<a href="cherry" class="inner-pic" target="_blank" rel="noopener noreferrer" title="cherry,,, [?]">
-						<img src="assets/cats-LQIP/cherryy,,.,_LQIP.webp" class="dynamic cats inner-pic" alt="cherry,,, [?]">
-					</a>
-					<a href="assets/original-cats/original-leo-1-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Leo sleeping in a silly way cause he doesn't know how to [Jan 5th, 2024]">
-						<img src="assets/cats-LQIP/too-eepy_LQIP.webp" class="dynamic cats inner-pic" alt="Leo sleeping in a silly way cause he doesn't know how to [Jan 5th, 2024]">
-					</a>
-					<a href="assets/original-cats/original-momo-prime-1-scaled.jpg" class="bottom-right-pic" target="_blank" rel="noopener noreferrer" title="Momo (prime) after she was pspspsps'd at [July 2nd, 2017]">
-						<img src="assets/cats-LQIP/pspspspsps_LQIP.webp" class="dynamic cats bottom-right-pic" alt="Momo (prime) after she was pspspsps'd at [July 2nd, 2017]">
-					</a>
-				</div>
-			</div>
-			<!-- ^^ the end of Google Gemini's HTML ^^ -->
+			<h2>My online nicknames</h2>
+			<p>
+				I go by many names online, mainly “Trip(7274)”, or “GamerTrip”, even though the latter is older,
+				I still don't mind it, call me whatever you want, so long as it’s appropriate, of course!
+				(<a href="https://youtube.com/clip/UgkxUZNrIBHoC9hLlDXlHpYkoKD_ebT93Q9d" title="a link to a Soctt the Woz video on Youtube" target="_blank" rel="noopener noreferrer">you can definitely call me fuck and hell though</a>)
+			</p>
+		</section>
+		<hr class="small-spacer">
+	</div>
+	<div class="panel">
+		<section>
+			<h2>Website status</h2>
+			<p>
+				This website is still a work in progress;
+				I'm considering a complete refactor before I add more content, but I have a few more projects in mind before then, so it might stay like this for a while, sorry about that!
+			</p>
 		</section>
 	</div>
+</div>
 
-	<footer>
-		<div class="sidediv last-item animate">
-			<nav>
-				<h3 class="footertxt">Home – <a class="footertxt" href="Notes" target="_self" rel="noopener noreferrer">Notes</a></h3>
-			</nav>
+<hr class="mid-spacer animate">
+
+<div class="lone-section animate" id="gallery">
+	<section>
+		<h2>Cats are really cool and cute</h2>
+		<!-- vv this HTML framework was generated from Google Gemini (and ship of theseus'd by me) vv -->
+		<div class="full-gallery">
+			<div class="top-gallery">
+				<a href="assets/original-cats/original-momo-2-scaled.jpg" class="top-left-pic" target="_blank" rel="noopener noreferrer" title="Momo looking silly and soft [Aug 27th, 2022]">
+					<img src="assets/cats-LQIP/no-cats_LQIP.webp" class="dynamic cats top-left-pic" alt="Momo looking silly and soft [Aug 27th, 2022]">
+				</a>
+
+				<a href="assets/original-cats/original-leo-4-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Leo going &quot;AAAAAAA&quot; [Sep 28th, 2023]">
+					<img src="assets/cats-LQIP/biiiig-yawn_LQIP.webp" class="dynamic cats inner-pic" alt="Leo going &quot;AAAAAAA&quot; [Sep 28th, 2023]">
+				</a>
+
+				<a href="assets/original-cats/original-untitled.cat-2-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Untitled.cat being dangerously silly with her face pressed into the camera [Nov 5th, 2022]">
+					<img src="assets/cats-LQIP/cat-close_LQIP.webp" class="dynamic cats inner-pic" alt="Untitled.cat being dangerously silly with her face pressed into the camera [Nov 5th, 2022]">
+				</a>
+
+				<a href="assets/original-cats/original-momo-3-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Momo looking all dramatic and fluffy [Aug 24th, 2022]">
+					<img src="assets/cats-LQIP/dramatic-silly_LQIP.webp" class="dynamic cats inner-pic" alt="Momo looking all dramatic and fluffy [Aug 24th, 2022]">
+				</a>
+
+				<a href="assets/original-cats/original-leo-3-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="You are being sniffed, please do not resist [Oct 7th, 2023]">
+					<img src="assets/cats-LQIP/being-sniffed_LQIP.webp" class="dynamic cats inner-pic" alt="You are being sniffed, please do not resist [Oct 7th, 2023]">
+				</a>
+
+				<a href="assets/original-cats/original-momo-prime-2-scaled.jpg" class="top-right-pic" target="_blank" rel="noopener noreferrer" title="Momo (prime) being the big eebi [Aug 8th, 2017]">
+					<img src="assets/cats-LQIP/big-eebi_LQIP.webp" class="dynamic cats top-right-pic" alt="Momo (prime) being the big eebi [Aug 8th, 2017]">
+				</a>
+			</div>
+			<div class="bottom-gallery">
+				<a href="assets/original-cats/original-momo-1-scaled.jpg" class="bottom-left-pic" target="_blank" rel="noopener noreferrer" title="Momo laying in the grass [Aug 27th, 2022]">
+					<img src="assets/cats-LQIP/look-at-herrrr_LQIP.webp" class="dynamic cats bottom-left-pic" alt="Momo laying in the grass [Aug 27th, 2022]">
+				</a>
+				<a href="assets/original-cats/original-leo-2-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Leo being a soff and happy little guyyy [Nov 21st, 2023]">
+					<img src="assets/cats-LQIP/happ_LQIP.webp" class="dynamic cats inner-pic" alt="Leo being a soff and happy little guyyy [Nov 21st, 2023]">
+				</a>
+				<a href="assets/original-cats/original-untitled.cat-1-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Untitled.cat looking at the camera cutely [Nov 10th, 2022]">
+					<img src="assets/cats-LQIP/silly-name_LQIP.webp" class="dynamic cats inner-pic" alt="Untitled.cat looking at the camera cutely [Nov 10th, 2022]">
+				</a>
+				<!--suppress HtmlUnknownTarget -->
+				<a href="cherry" class="inner-pic" target="_blank" rel="noopener noreferrer" title="cherry,,, [?]">
+					<img src="assets/cats-LQIP/cherryy,,.,_LQIP.webp" class="dynamic cats inner-pic" alt="cherry,,, [?]">
+				</a>
+				<a href="assets/original-cats/original-leo-1-scaled.jpg" class="inner-pic" target="_blank" rel="noopener noreferrer" title="Leo sleeping in a silly way cause he doesn't know how to [Jan 5th, 2024]">
+					<img src="assets/cats-LQIP/too-eepy_LQIP.webp" class="dynamic cats inner-pic" alt="Leo sleeping in a silly way cause he doesn't know how to [Jan 5th, 2024]">
+				</a>
+				<a href="assets/original-cats/original-momo-prime-1-scaled.jpg" class="bottom-right-pic" target="_blank" rel="noopener noreferrer" title="Momo (prime) after she was pspspsps'd at [July 2nd, 2017]">
+					<img src="assets/cats-LQIP/pspspspsps_LQIP.webp" class="dynamic cats bottom-right-pic" alt="Momo (prime) after she was pspspsps'd at [July 2nd, 2017]">
+				</a>
+			</div>
 		</div>
+		<!-- ^^ the end of Google Gemini's HTML ^^ -->
+	</section>
+</div>
+
+
+<div class="lone-section animate">
+	<footer>
+		<nav>
+			<h3 class="footertxt">Home – <a class="footertxt" href="Notes" target="_self" rel="noopener noreferrer">Notes</a></h3>
+		</nav>
 	</footer>
 </div>
 </body>
