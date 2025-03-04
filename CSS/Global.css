@@ -300,6 +300,7 @@ hr.small-spacer {
   :root {
     --first-header-color: #fff;
     --second-header-color: #fff;
+    --second-link-color: var(--link-color);
   }
   @media (scripting: none) or (prefers-reduced-motion) or (not (update: fast)) {
     .animate {
