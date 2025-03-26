@@ -5,85 +5,81 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trip's Home</title>
-	<meta content="#070b1f" data-react-helmet="true" name="theme-color">
-	<meta name="description" content="My silly little website :3">
-	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-	<link rel="stylesheet preload prefetch" href="assets/Nunito-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet preload prefetch" href="assets/Nunito-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
 
-	<link href="CSS/Global.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="Assets/Icons/favicon.ico">
+	<link rel="apple-touch-icon" href="Assets/Icons/apple-touch-icon.png">
+	<meta property="og:image" content="Assets/Icon/Commission_GamerTrip.png">
+
+	<link rel="stylesheet preload prefetch" href="Assets/Fonts/Nunito-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet preload prefetch" href="Assets/Fonts/Nunito-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+
+	<link href="CSS/Styles/Global.css" rel="stylesheet" type="text/css">
 
 	<script defer src="JS/animations.js" type="text/javascript"></script>
-	<!--<script src="JS/dynamic-resolution.js" async="" type="text/javascript"></script>-->
+	<script defer src="JS/floatToBottom.js" type="text/javascript"></script>
+	<script defer src="JS/navBlur.js" type="text/javascript"></script>
+
 	<meta property="og:site_name" content="Trip's Home">
 	<meta property="og:title" content="Home">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="/assets/Commission_GamerTrip.png">
 	<meta property="og:url" content="trps.dev">
 	<meta property="og:description" content="My silly little website :3">
+	<meta name="description" content="My silly little website :3">
+	<meta content="#4cffbc" data-react-helmet="true" name="theme-color">
 </head>
-<body class="mainbody">
+<body slide-direction="Left">
 
+<div id="MasterGrid">
 
-<div id="Header" class="animate">
-	<header>
-		<h1 id="Title" class="MajorGlint">Trip's home</h1><br>
+	<header class="animate">
+		<h3 id="PageLink" linkTo="Notes"><a onclick="navBlur()">  Notes ~<svg id="Chevron" class="leftChev" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><title>Clickable chevron pointing to the right</title><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></a></h3>
+		<h1 id="Title" class="majorGlint">Trip's home</h1><br>
 		<h2 id="Subtitle"><a href="https://youtu.be/bLoCxQ5VFAY?t=7" target="_blank" rel="noopener noreferrer" title="a link to a Youtube video saying &quot;ligma balls&quot;"><i><kbd>who the hell is trip?</kbd></i></a></h2>
 	</header>
-</div>
 
-<div class="mainDiv animate">
-	<div class="panel">
-		<main>
-			<h2>About me</h2>
-			<p>
-				I'm a <span id="SA">Saudi Arabian</span> guy who loves cats, lurantises, and a lotta other stuff, like playing video games and messing with computers.<br>
-				I got this domain mainly to grow my skills and hobbies, as I love computer networking and programming, so I use this as a hub for all my side-projects.<br><br>
-				Though, don’t hesitate to reach out to me on my Discord account: <code title="SGVsbG8gZmVsbG93IGJhc2U2NC1lciEgZGlkIHlvdSBsaWtlIHRoZSBwYXJ0IHdoZXJlIHlvdSBoYWQgdG8gaW5zcGVjdCBlbGVtZW50IHRvIGNvcHkgdGhpcz8K">echo "QFRyaXA3Mjc0Cg==" | base64 -d</code>
-				<!-- for your convenience, the title reads "Hello fellow base64-er! did you like the part where you had to inspect element to copy this?" -->
-			</p>
-		</main>
-		<hr class="small-spacer">
-	</div>
-
-	<div class="panel">
-		<section>
-			<h2>My online nicknames</h2>
-			<p>
-				I go by many names online, mainly “Trip(7274)”, or “GamerTrip”, even though the latter is older,
-				I still don't mind it, call me whatever you want, so long as it’s appropriate, of course!
-				(<a href="https://youtube.com/clip/UgkxUZNrIBHoC9hLlDXlHpYkoKD_ebT93Q9d" title="a link to a Soctt the Woz video on Youtube" target="_blank" rel="noopener noreferrer">you can definitely call me fuck and hell though</a>)
-			</p>
-		</section>
-		<hr class="small-spacer">
-	</div>
-	<div class="panel">
-		<section>
-			<h2>Website status</h2>
-			<p>
-				This website is still a work in progress;
-				I'm considering a complete refactor before I add more content, but I have a few more projects in mind before then, so it might stay like this for a while, sorry about that!
-			</p>
-		</section>
-	</div>
-</div>
-
-<hr class="mid-spacer animate">
-
-<!--<div class="lone-section animate"> // Sorry, Gallery machine broke
-	<section>
-		<h2>Cats are really cool and cute</h2>
-		<div id="Gallery">
+	<div id="MainDiv" class="animate">
+		<div class="panel">
+			<main>
+				<h2>About me</h2>
+				<p>
+					I'm a <span id="SA">Saudi Arabian</span> guy who loves cats, lurantises, and a lotta other stuff, like playing video games and messing with computers.<br>
+					I got this domain mainly to grow my skills and hobbies, as I love computer networking and programming, so I use this as a hub for all my side-projects.<br><br>
+					Though, don’t hesitate to reach out to me on my Discord account: <code title="SGVsbG8gZmVsbG93IGJhc2U2NC1lciEgZGlkIHlvdSBsaWtlIHRoZSBwYXJ0IHdoZXJlIHlvdSBoYWQgdG8gaW5zcGVjdCBlbGVtZW50IHRvIGNvcHkgdGhpcz8K">echo "QFRyaXA3Mjc0Cg==" | base64 -d</code>
+					<!-- for your convenience, the title reads "Hello fellow base64-er! did you like the part where you had to inspect element to copy this?" -->
+				</p>
+			</main>
+			<hr class="small-spacer">
 		</div>
-	</section>
-</div> -->
 
+		<div class="panel">
+			<section>
+				<h2>My online nicknames</h2>
+				<p>
+					I go by many names online, mainly “Trip(7274)”, or “GamerTrip”, even though the latter is older,
+					I still don't mind it, call me whatever you want, so long as it’s appropriate, of course!
+					(<a href="https://youtube.com/clip/UgkxUZNrIBHoC9hLlDXlHpYkoKD_ebT93Q9d" title="a link to a Soctt the Woz video on Youtube" target="_blank" rel="noopener noreferrer">you can definitely call me fuck and hell though</a>)
+				</p>
+			</section>
+			<hr class="small-spacer">
+		</div>
+		<div class="panel">
+			<section>
+				<h2>Website status</h2>
+				<p>
+					This website is still a work in progress;
+					I'm considering a complete refactor before I add more content, but I have a few more projects in mind before then, so it might stay like this for a while, sorry about that!
+				</p>
+			</section>
+		</div>
+	</div>
 
-<footer class="lone-section animate">
-	<nav>
-		<h3 class="footertxt">Home – <a class="footertxt" href="Notes" target="_self" rel="noopener noreferrer">Notes</a></h3>
-	</nav>
-</footer>
+	<!--<div class="lone-section animate"> // Sorry, Gallery machine broke
+		<section>
+			<h2>Cats are really cool and cute</h2>
+			<div id="Gallery">
+			</div>
+		</section>
+	</div> -->
+</div>
 </body>
 </html>

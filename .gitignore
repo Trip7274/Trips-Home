@@ -1,5 +1,4 @@
-/CSS/Global.css.map
-.idea/watcherTasks.xml
+.idea/*
 # Default ignored files
 /shelf/
 /workspace.xml
@@ -15,4 +14,9 @@
 /inspectionProfiles/Project_Default.xml
 /Trips-Home.iml
 /vcs.xml
-/.gitignore
+
+SassDir/*
+oldCss/
+
+*.css
+*.css.map

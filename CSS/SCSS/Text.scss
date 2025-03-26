@@ -1,0 +1,111 @@
+:root {
+	--selection-color: #D1BCFD;
+	--selected-text-color: #37265C;
+}
+
+p, a, h1, h2, h3, span, code, abbr {
+	&::selection {
+		color: var(--selected-text-color);
+		background-color: var(--selection-color);
+	}
+}
+
+@font-face {
+	font-family: "Nunito Extra Bold";
+	//noinspection CssUnknownTarget
+	src: url("../../Assets/Fonts/Nunito-ExtraBold.woff2") format("woff2");
+	font-weight: 800;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Nunito Semi Bold";
+	//noinspection CssUnknownTarget
+	src: url("../../Assets/Fonts/Nunito-SemiBold.woff2") format("woff2");
+	font-weight: 600;
+	font-display: swap;
+}
+
+h2 {
+	font: {
+		family: "Nunito Extra Bold", Arial, sans-serif;
+		size: calc(19px + .4621vw);
+	};
+	padding: {
+		top: calc(4px - .1vw);
+		left: calc(10px + .8vw);
+	};
+	
+	color: var(--header-color);
+	text-align: left;
+	margin: 0;
+	transition: color .1s;
+	
+	&:hover {
+		color: var(--hi-header-color)
+	}
+}
+
+p {
+	font: {
+		family: "Nunito Semi Bold", Arial, sans-serif;
+		size: calc(14px + .3vw);
+	};
+	padding: {
+		right: calc(18px + 1vw);
+		left: calc(20px + 1.5vw);
+	};
+	
+	color: var(--text-color);
+	line-height: 150%;
+}
+
+a {
+	font: {
+		family: "Nunito Semi Bold", Arial, sans-serif;
+		size: calc(14px + .3vw);
+	};
+	color: var(--link-color);
+	border-radius: var(--slight-radius);
+	transition: all .1s ease-in-out;
+	
+	&:focus, &:hover {
+		color: var(--second-link-color);
+	}
+	&:focus {
+		text-decoration: underline dashed;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+code {
+	font: {
+		size: calc(10px + .3vw);
+	};
+	background: #2B2D30;
+	border: #43454A solid 1px;
+	border-radius: var(--slight-radius);
+}
+
+span#SA {
+	--SA-green: #01532f;
+	
+	color: transparent;
+	background: {
+		image: linear-gradient(90deg, var(--SA-green) 6.7%, #fff 8%, #fff 15%, var(--SA-green) 16%, var(--SA-green) 25%, var(--SA-green), var(--primary-accent), var(--SA-green), #fff, #fff, #fff);
+		clip: text;
+		size: 400% 100%;
+		position: 100%;
+	};
+	text-shadow: none;
+	transition: background-position .6s cubic-bezier(.77,0,.18,1);
+	
+	&:hover {
+		background-position: 0;
+	}
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

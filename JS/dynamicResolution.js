@@ -8,8 +8,8 @@ imageElements.forEach(imageElement => {
 		const originalSrc = imageElement.src;
 		const originalPath = originalSrc.replace(/^.*\/([^/]*)_LQIP\.webp$/, (match, filename) => {
 	return filename === "cherryy,,.,"
-	? "assets/cats/cherryy,,.,.webp" // Handle edge case for "cherryy,,.,.webp"
-	: "assets/cats/" + filename + ".jpg"; // Handle other files
+	? "Assets/cats/cherryy,,.,.webp" // Handle edge case for "cherryy,,.,.webp"
+	: "Assets/cats/" + filename + ".jpg"; // Handle other files
 });
 
 	const { clientWidth: elementWidth, clientHeight: elementHeight } = imageElement;

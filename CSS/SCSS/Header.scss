@@ -1,18 +1,19 @@
 :root {
-	--first-header-color: #fff;
-	--second-header-color: #4cffbc;
+	--header-color: #fff;
+	--hi-header-color: var(--secondary-accent);
 }
 
-div#Header {
+header {
 	padding-bottom: calc(10px + .2621vw);
 	padding-top: calc(14px + .3621vw);
+	grid-row: 1;
 }
 
-.MajorGlint {
+.majorGlint {
 	background-image: linear-gradient(78deg, #FC5C7D, #FC5C7D, #6A82FB, #FC5C7D, #6A82FB, #FC5C7D, transparent, transparent, transparent);
 }
 
-.MinorGlint {
+.minorGlint {
 	background-image: linear-gradient(78deg, #fff, #fff, #fff, #fff, #FC5C7D, #FC5C7D,  #6A82FB, #FC5C7D, #6A82FB, #FC5C7D, transparent, transparent, transparent);
 }
 
@@ -32,8 +33,8 @@ div#Header {
 		delay: .25s;
 	};
 	font: {
-		size: calc(48px + .75vw - .25vw);
-		family: "nunito-extra-bold", Arial, sans-serif;
+		size: calc(40px + 1vw);
+		family: "Nunito Extra Bold", Arial, sans-serif;
 		weight: 700;
 	};
 	margin: {
@@ -52,7 +53,7 @@ div#Header {
 	left: 7px;
 	
 	font: {
-		size: calc(20px + .4vw - .2vw);
+		size: calc(16px + .4vw);
 		weight: 400;
 	};
 	
@@ -61,15 +62,51 @@ div#Header {
 	
 	transition: all .15s ease-in-out;
 	line-height: 100%;
-	color: var(--first-header-color);
+	//color: var(--link-color);
 	
 	&:hover {
-		color: var(--second-header-color);
+		color: var(--second-link-color);
 	}
 }
 
 a {
 	font-size: unset;
+}
+
+h3#PageLink {
+	display: flex;
+	align-items: center;
+	float: right;
+	
+	
+	cursor: pointer;
+	text-decoration: underline var(--link-color);
+	
+	svg#Chevron {
+		vertical-align: middle;
+		
+		fill: var(--link-color);
+		cursor: pointer;
+	}
+	
+	&:hover {
+		text-decoration: none;
+		svg#Chevron {
+			fill: var(--second-link-color);
+		}
+	}
+}
+
+.rightChev {
+	position: relative;
+	top: -.1vh;
+	left: 8px;
+}
+
+.leftChev {
+	position: relative;
+	top: -.1vh;
+	left: -8px;
 }
 
 @keyframes slideIn {

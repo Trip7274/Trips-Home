@@ -1,0 +1,83 @@
+:root {
+	
+	--primary-accent: #ceb9fa;
+	--secondary-accent: #4cffbc;
+	
+	// Text colors
+	
+	// <a>
+	
+	--link-color: #D7B8F3;
+	--second-link-color: var(--secondary-accent);
+	
+	--text-color: #fff;
+	--hi-text-color: #68acaf;
+	
+	--bg-color: #1D1F20;
+	background-color: var(--bg-color);
+	
+	padding: 0 1.32vw 1.32vw 1.32vw;
+	height: 100%;
+	
+	text-align: left;
+	transition: all .4s ease-in-out;
+	
+	// Radii
+	
+	--slight-radius: calc(2px + .2vw);
+	/*--inner-radius: calc(4px + .35vw);
+	--outer-radius: calc(8px + 1.35vw);*/
+	
+	// Border Sizes
+	
+	--med-border: calc(3px + .055vw);
+	--lrg-border: calc(6px + .055vw);
+}
+
+hr.mid-spacer {
+	color: #434140;
+	background-color: #434140;
+	margin: calc(14px + .3621vw) 0 calc(14px + .3621vw) 0;
+	position:relative;
+	z-index: -1;
+}
+
+.animate {
+	opacity: 0;
+	transform: translateY(10%);
+	filter: blur(10px);
+	transition: all .4s cubic-bezier(.86,0,.07,1);
+}
+
+.show {
+	opacity: unset;
+	filter: unset;
+	transform: unset;
+}
+
+.slide {
+	filter: blur(10px);
+	opacity: 0;
+}
+
+.slideLeft {
+	transform: translateX(-10%);
+}
+
+.slideRight {
+	transform: translateX(10%);
+}
+
+div#MasterGrid {
+	display: grid;
+	grid-template-rows: max-content max-content;
+}
+
+
+@import "Text";
+
+@import "Header";
+@import "Panel";
+@import "Footer";
+
+@import "Accessiblity";

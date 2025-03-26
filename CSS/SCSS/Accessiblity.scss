@@ -1,15 +1,28 @@
 @media (prefers-reduced-motion) {
 	:root {
-		--first-header-color: #fff;
-		--second-header-color: #fff;
+		--header-color: #fff;
+		--hi-header-color: #fff;
 		--second-link-color: var(--link-color);
+	}
+	
+	.slideLeft {
+		transform: translateX(0);
+	}
+	
+	.slideRight {
+		transform: translateX(0);
+	}
+	
+	.slide {
+		filter: unset;
+		opacity: unset;
 	}
 	
 	@media (scripting: none) or (prefers-reduced-motion)  or (not (update: fast)) {
 		.animate {
 			opacity: 1;
-			filter: none;
-			transform: none;
+			filter: unset;
+			transform: unset;
 		}
 	}
 	

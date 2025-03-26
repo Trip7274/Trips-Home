@@ -5,57 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trip's Notes</title>
-	<meta content="#070b1f" data-react-helmet="true" name="theme-color">
-	<meta name="description" content="My silly little notes page :3">
-	<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
-	<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-	<link rel="stylesheet preload prefetch" href="../assets/Nunito-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet preload prefetch" href="../assets/Nunito-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
-	<link href="style.css" rel="stylesheet">
-	<script defer src="../JS/animations.js"></script>
+
+	<link rel="icon" type="image/x-icon" href="../Assets/Icons/favicon.ico">
+	<link rel="apple-touch-icon" href="../Assets/Icons/apple-touch-icon.png">
+	<meta property="og:image" content="../Assets/Icons/Commission_GamerTrip.png">
+
+	<link rel="stylesheet preload prefetch" href="../Assets/Fonts/Nunito-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet preload prefetch" href="../Assets/Fonts/Nunito-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+
+	<link href="../CSS/Styles/Global.css" rel="stylesheet">
+	<!--<link href="../CSS/Styles/Notes.css" rel="stylesheet">-->
+
+	<script defer src="../JS/animations.js" type="text/javascript"></script>
+	<script defer src="../JS/floatToBottom.js" type="text/javascript"></script>
+	<script defer src="../JS/navBlur.js" type="text/javascript"></script>
+
 	<meta property="og:site_name" content="Trip's Home">
 	<meta property="og:title" content="Notes">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="../assets/Commission_GamerTrip.png">
 	<meta property="og:url" content="trps.dev/Notes">
 	<meta property="og:description" content="My silly little notes page :3">
+	<meta name="description" content="My silly little notes page :3">
+	<meta content="#4cffbc" data-react-helmet="true" name="theme-color">
 </head>
-<body class="mainbody">
+<body slide-direction="Right">
 
-<div id="content">
-<div class="maindiv animate">
-	<header>
-		<h1 id="Title">Privacy Notes</h1>
-		<p class="subtitle"><i><kbd>you agree to be cat-ified within 3-5 business days</kbd></i>
+<div id="MasterGrid">
+
+	<header class="animate">
+		<h3 id="PageLink" linkTo="../"><a onclick="navBlur()"><svg id="Chevron" class="rightChev" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><title>Clickable chevron pointing to the left</title><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>~ Home  </a></h3>
+		<h1 id="Title" class="minorGlint">Privacy Notes</h1><br>
+		<h2 id="Subtitle"><i><kbd>you agree to be cat-ified within 3-5 business days</kbd></i></h2>
 	</header>
-</div>
-<div class="stick">
-<div class="firstdiv animate">
-	<div class="last-item">
+
+	<div id="MainDiv" class="panel animate">
 		<main>
 			<h2>Super important super cool notes</h2>
 			<p>
-			The majority of this site was completely made by me using HTML and CSS, so excuse any dumb design or flaw as I'm still a beginner in both.<br>
-			Any code that wasn't written by me is credited in the project README, listed below in the source code.<br><br>
-			It's currently hosted using <a href="https://pages.cloudflare.com/" title="Cloudflare Pages website" target="_blank" rel="noopener noreferrer">Cloudflare Pages</a>,
-			with <a href="https://www.cloudflare.com/web-analytics/" title="Cloudflare Analytics website" target="_blank" rel="noopener noreferrer">Cloudflare Analytics</a> 
-			(I only get anonymous, general data, and it's only used to monitor overall website performance),
-			while the fonts are from <a href="https://fonts.google.com/specimen/Nunito" title="This site's font from Google fonts (weights 600 and 800)" target="_blank" rel="noopener noreferrer">Google Fonts</a>,
-			although, they're loaded in from Cloudflare Pages and not the Google Fonts API<br>
-			The source code can be found <a href="https://github.com/Trip7274/Trips-Home" target="_blank" rel="noopener noreferrer" title="The source code for this whole site on Github">here</a>
+				The majority of this site was completely made by me using HTML and CSS, so excuse any dumb design or flaw as I'm still a beginner in both.<br>
+				Any code that wasn't written by me is credited in the project README, listed below in the source code.<br><br>
+				It's currently hosted using <a href="https://pages.cloudflare.com/" title="Cloudflare Pages website" target="_blank" rel="noopener noreferrer">Cloudflare Pages</a>,
+				with <a href="https://www.cloudflare.com/web-analytics/" title="Cloudflare Analytics website" target="_blank" rel="noopener noreferrer">Cloudflare Analytics</a>
+				(I only get anonymous, general data, and it's only used to monitor overall website performance),
+				while the fonts are from <a href="https://fonts.google.com/specimen/Nunito" title="This site's font from Google fonts (weights 600 and 800)" target="_blank" rel="noopener noreferrer">Google Fonts</a>,
+				although, they're loaded in from Cloudflare Pages and not the Google Fonts API<br>
+				The source code can be found <a href="https://github.com/Trip7274/Trips-Home" target="_blank" rel="noopener noreferrer" title="The source code for this whole site on Github">here</a>
 			</p>
 		</main>
 	</div>
-</div>
-
-<footer>
-	<div class="sidediv last-item animate">
-		<nav>
-			<h3 class="footertxt"><a class="footertxt" href="../" target="_self" rel="noopener noreferrer" style="color:#D7B8F3;">Home</a> – Notes</h3>
-		</nav>
-	</div>
-</footer>
-</div>
 </div>
 </body>
 
