@@ -1,9 +1,5 @@
 /*
-	Content-Security-Policy: default-src 'sha256-94D0x+wu+n3PC9ykcZMaAjpUxWC+Tin7gcErV2wotZ0=' 'self' trps.dev;
-	img-src 'self' *.trps.dev trps.dev;
-	script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com trps.dev 'sha256-OKaubtHuUapWHqa2sJmSC9yIkN3kxkT9VVUVYxMOvYQ=' 'sha256-LKWJg7JoLbVQBklyeqOf3s62GWH/dExQ3X5T5sCg1fM=' 'sha256-RcFHIuDvrovyW5pSKlggeAKWLy4l908FLrtof82SMSA=' 'sha256-/l2c7j/TmO5BFvaLC0e7Myls89KwgDg4hClrymXfTy8=';
-	connect-src cloudflareinsights.com;
-	object-src 'none';
+	Content-Security-Policy: default-src 'sha256-94D0x+wu+n3PC9ykcZMaAjpUxWC+Tin7gcErV2wotZ0=' 'self' trps.dev; img-src 'self' *.trps.dev trps.dev; script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com trps.dev 'sha256-OKaubtHuUapWHqa2sJmSC9yIkN3kxkT9VVUVYxMOvYQ=' 'sha256-LKWJg7JoLbVQBklyeqOf3s62GWH/dExQ3X5T5sCg1fM=' 'sha256-RcFHIuDvrovyW5pSKlggeAKWLy4l908FLrtof82SMSA=' 'sha256-/l2c7j/TmO5BFvaLC0e7Myls89KwgDg4hClrymXfTy8='; connect-src cloudflareinsights.com; object-src 'none';
 
 /404
 	X-Robots-Tag: noindex
