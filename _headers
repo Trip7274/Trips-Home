@@ -1,5 +1,5 @@
 /*
-	Content-Security-Policy: default-src 'sha256-94D0x+wu+n3PC9ykcZMaAjpUxWC+Tin7gcErV2wotZ0=' 'self' trps.dev; img-src 'self' *.trps.dev trps.dev; script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com trps.dev unsafe-inline; connect-src cloudflareinsights.com; object-src 'none';
+	Content-Security-Policy: default-src 'sha256-94D0x+wu+n3PC9ykcZMaAjpUxWC+Tin7gcErV2wotZ0=' 'self' trps.dev; img-src 'self' *.trps.dev trps.dev; script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com trps.dev 'unsafe-inline'; connect-src cloudflareinsights.com; object-src 'none';
 
 /404
 	X-Robots-Tag: noindex
