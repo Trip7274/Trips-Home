@@ -1,9 +1,9 @@
 function floatToBottom() {
-	const contentDiv = document.getElementById("MainDiv");
-	const headerDiv = document.querySelector('header');
-	const masterGrid = document.getElementById("MasterGrid");
+	const contentHeight = document.getElementById("MainDiv").clientHeight;
+	const headerHeight = document.querySelector('header').clientHeight;
 
-	masterGrid.style.gridTemplateRows = `${Math.max(window.innerHeight - contentDiv.clientHeight - (14 + (window.innerWidth * 0.03621)), headerDiv.clientHeight)}px 1fr`;
-}// calc(14px + .3621vw)
+	// The math is for the margin of #MasterDiv
+	document.getElementById("MasterGrid").style.gridTemplateRows = `${Math.max(window.innerHeight - contentHeight - (14 + (window.innerWidth * 0.03621)), headerHeight)}px 1fr`;
+}
 
-window.onload = floatToBottom;
+window.addEventListener("load", floatToBottom, false);
