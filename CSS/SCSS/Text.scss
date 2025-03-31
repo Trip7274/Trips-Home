@@ -104,11 +104,6 @@ span#SA {
 	}
 }
 
-.tooltip {
-	color: #b2b2b2;
-	cursor: context-menu;
-}
-
 // Add tooltips for mobile
 @media (pointer: coarse), (hover: none) {
 	[title]:not(a) {
