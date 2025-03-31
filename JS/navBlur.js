@@ -1,5 +1,6 @@
 function navBlur() {
-	const destenationUrl = document.getElementById("PageLink").attributes.getNamedItem("linkTo").value;
+	event.preventDefault();
+	const destenationUrl = document.getElementById("PageLinkAnchor").href;
 
 	if (window.matchMedia("prefers-reduced-motion").matches) {
 		window.location.href = destenationUrl;

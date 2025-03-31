@@ -1,29 +1,21 @@
 :root {
-	--panel-bg-color: #191B1C;
-	--panel-hi-bg-color: #161819;
-	--outline-color: #0F121D;
+	--panel-bg-color: rgb(25, 27, 28);
+	--panel-bg-color-hi: rgb(17, 19, 20);
+	--outline-color: rgba(255, 255, 255, .1);
+	--outline-color-hi: rgba(255, 255, 255, .2);
 }
 
 %section {
 	background-color: var(--panel-bg-color);
-	border-left: var(--med-border) solid var(--outline-color);
+	border: var(--sm-border) solid var(--outline-color);
 	
 	padding: calc(8px + 1vw) calc(12px + .3521vw) 0 calc(12px + .3521vw);
 	transition: all .15s ease-in-out;
 	
 	&:hover {
-		background-color: var(--panel-hi-bg-color);
-		border-left: var(--lrg-border) solid var(--outline-color);
-		
-		padding-right: calc(9px + .3521vw);
-		.small-spacer {
-			padding-right: var(--lrg-border);
-		}
+		background-color: var(--panel-bg-color-hi);
+		border-color: var(--outline-color-hi);
 	}
-}
-
-#MainDiv {
-	margin: calc(14px + .3621vw) 0;
 }
 
 div#ContentDiv {
@@ -34,41 +26,40 @@ div#ContentDiv {
 	// First div
 	&:first-child {
 		@extend %section;
-		border-radius: var(--slight-radius) var(--slight-radius) 0 0;
+		border: {
+			radius: var(--slight-radius) var(--slight-radius) 0 0;
+			bottom-width: 0;
+			top-width: var(--sm-border);
+		};
 	}
 	
 	// Any middle divs
 	&:not(:first-child, :last-child) {
 		@extend %section;
+		border-bottom-width: 0;
+		border-top-width: 0;
 	}
 	
 	// Last div
 	&:last-child {
 		@extend %section;
-		padding: calc(8px + 1vw) calc(12px + .3521vw) calc(14px + .3621vw) calc(14px + .3621vw);
-		
-		border: {
-			radius: 0 0 var(--slight-radius) var(--slight-radius);
-			color: var(--outline-color);
-			style: solid;
-			width: 0 0 var(--med-border) var(--med-border);
-		};
-		
-		&:hover {
-			border-width: 0 0 var(--lrg-border) var(--lrg-border);
-			padding: calc(8px + 1vw) calc(9px + .3521vw) calc(11px + .3621vw) calc(14px + .3621vw);
-		}
+		padding-bottom: calc(14px + .3621vw);
+		border-radius: 0 0 var(--slight-radius) var(--slight-radius);
+		border-top-width: 0;
 	}
 }
 
-.lone-section {
+div.lone-section {
 	@extend .panel, :last-child;
-	border-radius: var(--slight-radius);
+	border: {
+		top-width: var(--sm-border) !important;
+		radius: var(--slight-radius) !important;
+	};
 	margin-bottom: calc(14px + .3621vw);
 }
 
 hr.small-spacer {
-	max-width: 80%;
+	max-width: 90%;
 	height: 0;
 	border: 0;
 	margin: 0 auto;

@@ -1,0 +1,50 @@
+@media (prefers-reduced-motion) {
+	a, .panel {
+		transition: none !important;
+	}
+	
+	#Title {
+		background-image: linear-gradient(#fff, #fff);
+	}
+	
+	.slideLeft, .slideRight {
+		transform: translateX(0);
+	}
+	
+	.slide {
+		filter: unset;
+		opacity: unset;
+	}
+}
+
+@media (scripting: none) or (prefers-reduced-motion) or (not (update: fast)) {
+	.animate {
+		opacity: 1;
+		filter: unset;
+		transform: unset;
+	}
+}
+
+@media (prefers-contrast: more) {
+	:root {
+		--outline-color: #fff;
+		--outline-color-hi: #fff;
+		--panel-bg-color: black;
+		--panel-bg-color-hi: black;
+		--bg-color: black;
+	}
+
+	hr.small-spacer {
+		max-width: 100%;
+		height: 0;
+		border: 0;
+		margin: 0 auto;
+		border-bottom: 1px solid #fff;
+	}
+
+	.tooltip {
+		color: #fff;
+		text-decoration: #fff underline dashed;
+		cursor: context-menu;
+	}
+}

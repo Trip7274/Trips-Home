@@ -1,19 +1,24 @@
+@use "Text";
+
+@use "Header";
+@use "Panel";
+
 :root {
 	
-	--primary-accent: #ceb9fa;
-	--secondary-accent: #4cffbc;
+	--primary-accent: rgb(206, 185, 250);
+	--secondary-accent: rgb(76, 255, 188);
 	
 	// Text colors
 	
 	// <a>
 	
-	--link-color: #D7B8F3;
+	--link-color: rgb(215, 184, 243);
 	--second-link-color: var(--secondary-accent);
 	
-	--text-color: #fff;
-	--hi-text-color: #68acaf;
+	--text-color: rgb(255, 255, 255);
+	--hi-text-color: rgb(104, 172, 175);
 	
-	--bg-color: #1D1F20;
+	--bg-color: rgb(29, 31, 32);
 	background-color: var(--bg-color);
 	
 	padding: 0 1.32vw 1.32vw 1.32vw;
@@ -25,20 +30,22 @@
 	// Radii
 	
 	--slight-radius: calc(2px + .2vw);
-	/*--inner-radius: calc(4px + .35vw);
-	--outer-radius: calc(8px + 1.35vw);*/
 	
 	// Border Sizes
 	
+	--sm-border: calc(2px + .025vw);
 	--med-border: calc(3px + .055vw);
 	--lrg-border: calc(6px + .055vw);
 }
 
 hr.mid-spacer {
-	color: #434140;
-	background-color: #434140;
+	color: rgb(67, 65, 64);
+	background-color: rgb(67, 65, 64);
+	
 	margin: calc(14px + .3621vw) 0 calc(14px + .3621vw) 0;
-	position:relative;
+	width: 100%;
+	
+	position: relative;
 	z-index: -1;
 }
 
@@ -73,11 +80,6 @@ div#MasterGrid {
 	grid-template-rows: max-content max-content;
 }
 
-
-@import "Text";
-
-@import "Header";
-@import "Panel";
-@import "Footer";
-
-@import "Accessiblity";
+div#ContentDiv {
+	grid-row: 2;
+}

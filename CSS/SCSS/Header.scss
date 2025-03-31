@@ -1,20 +1,11 @@
-:root {
-	--header-color: #fff;
-	--hi-header-color: var(--secondary-accent);
-}
-
 header {
 	padding-bottom: calc(10px + .2621vw);
 	padding-top: calc(14px + .3621vw);
 	grid-row: 1;
 }
 
-.majorGlint {
-	background-image: linear-gradient(78deg, #FC5C7D, #FC5C7D, #6A82FB, #FC5C7D, #6A82FB, #FC5C7D, transparent, transparent, transparent);
-}
-
-.minorGlint {
-	background-image: linear-gradient(78deg, #fff, #fff, #fff, #fff, #FC5C7D, #FC5C7D,  #6A82FB, #FC5C7D, #6A82FB, #FC5C7D, transparent, transparent, transparent);
+.glint {
+	background-image: linear-gradient(#fff, #fff);
 }
 
 #Title {
@@ -62,31 +53,19 @@ header {
 	
 	transition: all .15s ease-in-out;
 	line-height: 100%;
-	//color: var(--link-color);
-	
-	&:hover {
-		color: var(--second-link-color);
-	}
-}
-
-a {
-	font-size: unset;
 }
 
 h3#PageLink {
 	display: flex;
 	align-items: center;
 	float: right;
+	font-size: calc(24px + 0.3vw);
 	
-	
-	cursor: pointer;
 	text-decoration: underline var(--link-color);
 	
 	svg#Chevron {
 		vertical-align: middle;
-		
 		fill: var(--link-color);
-		cursor: pointer;
 	}
 	
 	&:hover {

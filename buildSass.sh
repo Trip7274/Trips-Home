@@ -31,7 +31,7 @@ if [ ! -f SassDir/dart-sass/dart-sass/sass ] && [ "$USE_SYSTEM_SASS" != "1" ]; t
 fi
 
 SolutionDir=$(dirname "$(realpath "$0")")
-echo "Detected SolutionDir is $SolutionDir"
+echo "Detected SolutionDir is: $SolutionDir"
 echo "Compiling Sass..."
 
 sass "$SolutionDir/CSS/SCSS:$SolutionDir/CSS/Styles" --update
