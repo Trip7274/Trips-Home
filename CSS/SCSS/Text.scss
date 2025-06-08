@@ -13,7 +13,6 @@ p, a, h1, h2, h3, span, code, abbr {
 
 @font-face {
 	font-family: "Nunito Extra Bold";
-	//noinspection CssUnknownTarget
 	src: url("../../Assets/Fonts/Nunito-ExtraBold.woff2") format("woff2");
 	font-weight: 800;
 	font-display: swap;
@@ -21,7 +20,6 @@ p, a, h1, h2, h3, span, code, abbr {
 
 @font-face {
 	font-family: "Nunito Semi Bold";
-	//noinspection CssUnknownTarget
 	src: url("../../Assets/Fonts/Nunito-SemiBold.woff2") format("woff2");
 	font-weight: 600;
 	font-display: swap;
@@ -78,9 +76,7 @@ a {
 }
 
 code {
-	font: {
-		size: calc(10px + .3vw);
-	};
+	font-size: calc(10px + .3vw);
 	background: #2B2D30;
 	border: #43454A solid 1px;
 	border-radius: var(--slight-radius);
@@ -98,10 +94,16 @@ span#SA {
 	};
 	text-shadow: none;
 	transition: background-position .6s cubic-bezier(.77,0,.18,1);
+	text-decoration: underline dashed var(--outline-color-hi);
 	
 	&:hover {
 		background-position: 0;
 	}
+}
+
+.question {
+	color: darken(rgb(255, 255, 255), 15%);
+	text-decoration: underline dotted var(--outline-color-hi);
 }
 
 // Add tooltips for mobile

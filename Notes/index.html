@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Trip's Notes</title>
+	<title>Notes</title>
 
 	<link rel="icon" type="image/x-icon" href="../Assets/Icons/favicon.ico">
 	<link rel="apple-touch-icon" href="../Assets/Icons/apple-touch-icon.png">
@@ -23,11 +23,11 @@
 	<meta name="darkreader-lock">
 
 	<meta property="og:site_name" content="Trip's Home">
-	<meta property="og:title" content="Trip's Notes">
+	<meta property="og:title" content="Notes">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="trps.dev/Notes">
-	<meta property="og:description" content="My silly little notes page :3">
-	<meta name="description" content="My silly little notes page :3">
+	<meta property="og:description" content="Notes on a few things and a few FAQs">
+	<meta name="description" content="Notes on a few things and a few FAQs">
 	<meta content="#ceb9fa" data-react-helmet="true" name="theme-color">
 </head>
 <body slide-direction="Right">
@@ -35,25 +35,67 @@
 <div id="MasterGrid">
 
 	<header class="animate">
-		<h3 id="PageLink"><a onclick="navBlur()" href="../" title="Switch back to the main page" id="PageLinkAnchor"><svg id="Chevron" class="rightChev" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><title>Clickable chevron pointing to the left</title><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>~ Home  </a></h3>
-		<h1 id="Title" class="glint">Trip's Notes</h1><br>
+		<h3 id="PageLink"><a onclick="navBlur()" href="../" title="Switch back to the main page" id="PageLinkAnchor"><svg id="Chevron" class="rightChev" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"/></svg>~ Home</a></h3>
+		<h1 id="Title" class="glint">Notes & FAQ</h1><br>
 		<h2 id="Subtitle"><i><kbd>Collect my 8 notes...</kbd></i></h2>
 	</header>
 
-	<div id="MainDiv" class="lone-section animate">
-		<main>
-			<h2>Super important super cool notes</h2>
-			<p>
-				The majority of this site was completely made by me using HTML and CSS, so excuse any dumb design or flaw as I'm still a beginner in both.<br>
-				Any code that wasn't written by me is credited in the project README, listed below in the source code.<br><br>
-				It's currently hosted using <a href="https://pages.cloudflare.com/" title="Cloudflare Pages website" target="_blank" rel="noopener noreferrer">Cloudflare Pages</a>,
-				with <a href="https://www.cloudflare.com/web-analytics/" title="Cloudflare Analytics website" target="_blank" rel="noopener noreferrer">Cloudflare Analytics</a>
-				(I only get anonymous, general data, and it's only used to monitor overall website performance),
-				while the fonts are from <a href="https://fonts.google.com/specimen/Nunito" title="This site's font from Google fonts (weights 600 and 800)" target="_blank" rel="noopener noreferrer">Google Fonts</a>,
-				although, they're loaded in from Cloudflare Pages and not the Google Fonts API<br>
-				The source code can be found <a href="https://github.com/Trip7274/Trips-Home" target="_blank" rel="noopener noreferrer" title="The source code for this whole site on Github">here</a>
-			</p>
-		</main>
+	<div id="MainDiv" class="animate">
+		<div class="panel">
+			<main>
+				<h2>Technical notes</h2>
+				<p>
+					The majority of this site was completely made by me using HTML and CSS.
+					Feel free to approach me about any feedback!<br>
+					Any code not written by me is credited in the project README, listed below in the source code.<br><br>
+					This is currently hosted
+					using <a href="https://pages.cloudflare.com/" title="Cloudflare Pages website" target="_blank" rel="noopener noreferrer">Cloudflare Pages</a>,
+					with <a href="https://www.cloudflare.com/web-analytics/" title="Cloudflare Analytics website" target="_blank" rel="noopener noreferrer">Cloudflare Analytics</a>
+					(I only get anonymous, general data, and it's only used to monitor overall website performance).<br>
+					The font I use is <a href="https://fonts.google.com/specimen/Nunito" title="This site's font from Google fonts (weights 600 and 800)" target="_blank" rel="noopener noreferrer">Nunito</a>.
+					You can find the source code <a href="https://github.com/Trip7274/Trips-Home" target="_blank" rel="noopener noreferrer" title="The source code for this whole site on Github">here</a>.
+				</p>
+			</main>
+			<hr class="small-spacer">
+		</div>
+
+		<div class="panel">
+			<section>
+				<h2>FAQs</h2>
+				<p>
+					Question: <span class="question">What's your setup?</span><br>
+					Answer: I mainly use a desktop with a Ryzen 5 7600X, 9070 XT and 32GBs of memory.
+					I have 2 monitors, a Mini-LED and an Ultrawide, both at 1440p.
+					(27" and 34")<br><br>
+
+					Question: <span class="question">What purpose does this serve?</span><br>
+					Answer: What purpose does an old painting serve?
+					To learn on.
+					To remember.
+					To show your progression.
+					Plenty of reasons, is it <i>absoloutely critical?</i>
+					No, but I like it.<br><br>
+
+					Question: <span class="question">Were you trying to be poetic there, or??</span><br>
+					Answer: I can get up to some shenanigans in here. It <i>is</i> my site, afterall. Let me be cheesy.<br><br>
+
+					Question: <span class="question">What do you specialize in? (in terms of software engineering)</span><br>
+					Answer: I'm still learning, but I'm finding that I thrive particularly in the back-end.
+					I've been working on <a href="https://github.com/Trip7274/Bayt_API" target="_blank" rel="noopener noreferrer" title="The Bayt API's Github page">the Bayt API</a> in C# for a while now,
+					and I'm really enjoying it.
+					(even if the progress is a bit slow)<br><br>
+
+					Question: <span class="question">Elevator pitch for the Bayt API?</span><br>
+					Answer:
+					Imagine having a standardized,
+					versatile REST API back-end for any NAS-related front-end you wanna make.
+					Full-fledged system dashboard?
+					Got it.
+					Simple display of NAS stats?
+					Try <i>already implemented.</i>
+				</p>
+			</section>
+		</div>
 	</div>
 </div>
 </body>

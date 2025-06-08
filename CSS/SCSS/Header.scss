@@ -1,5 +1,5 @@
 header {
-	padding-bottom: calc(10px + .2621vw);
+	padding-bottom: 3vh;
 	padding-top: calc(14px + .3621vw);
 	grid-row: 1;
 }
@@ -30,6 +30,7 @@ header {
 	};
 	margin: {
 		top: 0;
+		left: .5vh;
 		bottom: .32vw;
 	};
 	
@@ -59,7 +60,8 @@ h3#PageLink {
 	display: flex;
 	align-items: center;
 	float: right;
-	font-size: calc(24px + 0.3vw);
+	font-size: calc(22px + 0.3vw);
+	margin-bottom: 0;
 	
 	text-decoration: underline var(--link-color);
 	
