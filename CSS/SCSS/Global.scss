@@ -78,6 +78,7 @@ hr.mid-spacer {
 div#MasterGrid {
 	display: grid;
 	grid-template-rows: max-content max-content;
+	transition: grid-template-rows .2s cubic-bezier(1,0,0,1);
 }
 
 div#ContentDiv {

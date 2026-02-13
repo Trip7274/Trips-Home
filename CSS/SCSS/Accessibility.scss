@@ -15,6 +15,9 @@
 		filter: unset;
 		opacity: unset;
 	}
+	div#MasterGrid {
+		transition: unset;
+	}
 }
 
 @media (scripting: none) or (prefers-reduced-motion) or (not (update: fast)) {
